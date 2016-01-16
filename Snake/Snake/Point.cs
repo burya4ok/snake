@@ -17,7 +17,6 @@ namespace Snake
             this.x = x;
             this.y = y;
             this.sym = sym;
-            Console.WriteLine("Создана новая точка!");
         }
 
         public void Draw()

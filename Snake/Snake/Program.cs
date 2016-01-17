@@ -13,8 +13,16 @@ namespace Snake
 
             Console.OutputEncoding = Encoding.GetEncoding(1251);
 
-            HorizontalLine line = new HorizontalLine(3,10,4,'#');
-            line.Draw();
+            HorizontalLine upLine = new HorizontalLine(0, 78, 0,'+');
+            HorizontalLine downLine = new HorizontalLine(0, 78, 24, '+');
+            VerticalLine leftLine = new VerticalLine(0, 24, 0, '+');
+            VerticalLine rightLine = new VerticalLine(0, 24, 78, '+');
+
+
+            upLine.Draw();
+            downLine.Draw();
+            leftLine.Draw();
+            rightLine.Draw();
 
             Console.ReadLine();
         }
